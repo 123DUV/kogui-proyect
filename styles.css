@@ -4,22 +4,33 @@
   background: 
     linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  /* capa oscura semitransparente */
     url('./img/background-principal.png') center/cover no-repeat;
-
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* 👈 clave */
 }
 .fondo-linajes{
   background: 
     linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  /* capa oscura semitransparente */
     url('./img/background-linaje.png') center/cover no-repeat;
+      background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* 👈 clave */
 }
 .fondo-musica{
   background: 
     linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  /* capa oscura semitransparente */
     url('./img/music.png') center/cover no-repeat;
+      background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* 👈 clave */
 }
 .fondo-arte{
   background: 
     linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  /* capa oscura semitransparente */
     url('./img/arte-back.png') center/cover no-repeat;
+      background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* 👈 clave */
 }
 .parrafos{
     color: white;
@@ -53,4 +64,5 @@
     height: 180px;
     font-size: 0.9rem;
   }
+
 }
