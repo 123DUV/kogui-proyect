@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="icon" href="../icon.png" type="image/x-icon">
+        <title>Los Koguis</title>
+        <style>
+        * { box-sizing: border-box; }
+    body { margin: 0; font-family: sans-serif; background: #f5f5f5; }
+
+    .carrusel {
+      width: 90%;
+      max-width: 500px;
+      margin: 0 auto;
+      padding-bottom: 2%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 2%;
+    }
+
+    .slides {
+      display: flex;
+      width: 500%;
+      transition: transform 0.5s ease;
+    }
+
+    .slide {
+      width: 20%;
+      flex-shrink: 0;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+    }
+
+    input[type=radio] { display: none; }
+
+    /* Posiciones según el radio activo */
+    #r1:checked ~ .slides { transform: translateX(0%); }
+    #r2:checked ~ .slides { transform: translateX(-20%); }
+    #r3:checked ~ .slides { transform: translateX(-40%); }
+    #r4:checked ~ .slides { transform: translateX(-60%); }
+    #r5:checked ~ .slides { transform: translateX(-80%); }
+
+    /* Botones */
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border: none;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+      line-height: 38px;
+      text-align: center;
+      user-select: none;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    @media (max-width: 600px) {
+      .nav-btn {
+        width: 35px; height: 35px;
+        font-size: 18px;
+        line-height: 33px;
+      }
+    }
+  </style>
+    </head>
+    <body class="fondo-arte">
+        <div class=" position-absolute top-0 m-3 ">
+            <button class="btn btn-light" onclick="history.go(-1)"><i class="bi bi-arrow-left"></i> Volver</button>
+        </div>
+
+        <header class="logo d-flex justify-content-center my-4">
+            <img src="../img/arte.png" width="30%" alt="Koguis">
+        </header>
+
+        <main
+            class="container d-flex flex-wrap justify-content-center align-items-center pb-3">
+            <div class="d-flex flex-column flex-xl-row justify-content-center">
+
+                <div class="carrusel col-8 ">
+                    <!-- Radios -->
+                    <input type="radio" name="radio" id="r1" checked>
+                    <input type="radio" name="radio" id="r2">
+                    <input type="radio" name="radio" id="r3">
+                    <input type="radio" name="radio" id="r4">
+                    <input type="radio" name="radio" id="r5">
+    
+                    <!-- Slides -->
+                    <div class="slides">
+                        <div class="slide "><img
+                                src="../img/arte-imgs/1-arte.jpeg"
+                                alt></div>
+                        <div class="slide"><img
+                                src="../img/arte-imgs/2-arte.jpeg"
+                                alt></div>
+                        <div class="slide"><img
+                                src="../img/arte-imgs/3-arte.jpeg"
+                                alt></div>
+                        <div class="slide"><img
+                                src="../img/arte-imgs/4-arte.jpeg"
+                                alt></div>
+                        <div class="slide"><img
+                                src="../img/arte-imgs/5-arte.jpeg"
+                                alt></div>
+                        <div class="slide"><img
+                                src="../img/arte-imgs/6-arte.jpeg"
+                                alt></div>
+                    </div>
+    
+                    <!-- Botones -->
+                    <button class="nav-btn prev">&#10094;</button>
+                    <button class="nav-btn next">&#10095;</button>
+                </div>
+                <div class="d-flex   justify-content-center">
+                    <p class="text-white px-3 pb-3"
+                        style="text-align: justify;"
+                        style="max-width: 600px;">
+                        La mochila en general tiene un alto valor simbólico y
+                        espiritual para las comunidades Kogui, ya que representa la
+                        fertilidad, la placenta y el útero, tanto de cada mujer como
+                        de la Madre creadora del universo. Por esto la mochila se
+                        desenvuelve en espiral como la forma de un caracol,
+                        representando como el universo se fue desenvolviendo del
+                        huso de la Madre creadora.
+                        <br>
+                        <br>
+                        La mochila de los Koguis generalmente es de fibra de fique,
+                        aunque también poseen una variedad de mochilas en algodón.
+                        En el caso de las mochilas de fique, estas suelen tener
+                        líneas horizontales tinturadas que reflejan el linaje o la
+                        casta de su portador o portadora. Las mochilas de algodón
+                        son usadas para guardar el poporo y la coca de los hombres,
+                        y representan un objeto ritual, utilizado por los mamos y
+                        autoridades espirituales de su territorio. Por lo tanto su
+                        uso queda restringido a la propia comunidad.
+                        <br>
+                        <br>
+                        La mochila también es dada a los niños de la comunidad
+                        apenas unos días después de nacer. Esta es tejida por el
+                        padre y se utiliza para cargar al recién nacido, llevarlo al
+                        río y darle el primer baño como un acto bautismal. A partir
+                        de los 12 años los niños empiezan a utilizar mochilas de
+                        fique, pero es hasta que se les da la iniciación a la
+                        comunidad cuando el joven no puede utilizar mochilas de
+                        algodón.
+                        <br>
+                        <br>
+                        Con respecto a la comercialización de sus objetos tejidos es
+                        necesario decir que por sus costumbres y por las condiciones
+                        de aislamiento voluntario que tienen las comunidades
+                        indígenas Kogui de las personas no indígenas, no existen
+                        canales de comercialización estables o fuertes. Sólo algunas
+                        personas venden sus objetos como artesanías fuera de la
+                        comunidad, cuestión que también es vista con recelo por
+                        parte de algunos mamos. Las únicas salidas comerciales
+                        estables que tienen los indígenas Kogui con las personas no
+                        indígenas, están dadas por el café y los derivados de la
+                        caña de azúcar. </p>
+    
+                </div>
+            </div>
+            <div class="ratio ratio-16x9">
+                <iframe
+                    width="500" height="315"
+                    src="https://www.youtube.com/embed/voC_Db0svjA?si=1dCbKYeJv36j0315"
+                    title="MAMA MALKUA (mito kogui) - Oralituras del Caribe colombiano."
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </main>
+        <script>
+  // JS muy corto solo para que los botones avancen correctamente
+  const radios = [...document.querySelectorAll('input[name="radio"]')];
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+  let index = 0;
+
+  function show(i) {
+    index = (i + radios.length) % radios.length;
+    radios[index].checked = true;
+  }
+
+  prev.addEventListener('click', () => show(index - 1));
+  next.addEventListener('click', () => show(index + 1));
+</script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+
+
+.fondo {
+  background: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  /* capa oscura semitransparente */
+    url('./img/background-principal.png') center/cover no-repeat;
+
+}
+.fondo-linajes{
+  background: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  /* capa oscura semitransparente */
+    url('./img/background-linaje.png') center/cover no-repeat;
+}
+.fondo-musica{
+  background: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  /* capa oscura semitransparente */
+    url('./img/music.png') center/cover no-repeat;
+}
+.fondo-arte{
+  background: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  /* capa oscura semitransparente */
+    url('./img/arte-back.png') center/cover no-repeat;
+}
+.parrafos{
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 0 15%;
+}
+.nube {
+  background-image: url("./img/burbuja.png");
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nube a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .nube {
+    width: 180px;
+    height: 180px;
+    font-size: 0.9rem;
+  }
+}
