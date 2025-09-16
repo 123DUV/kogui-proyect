@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh; /* 👈 clave */
+
 }
 .fondo-linajes{
   background: 
@@ -15,6 +16,7 @@
       background-size: cover;
   background-position: center;
   min-height: 100vh; /* 👈 clave */
+  
 }
 .fondo-musica{
   background: 
@@ -28,6 +30,14 @@
   background: 
     linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  /* capa oscura semitransparente */
     url('./img/arte-back.png') center/cover no-repeat;
+      background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* 👈 clave */
+}
+.fondo-casas{
+  background: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  /* capa oscura semitransparente */
+    url('./img/background-houses.png') center/cover no-repeat;
       background-size: cover;
   background-position: center;
   min-height: 100vh; /* 👈 clave */
