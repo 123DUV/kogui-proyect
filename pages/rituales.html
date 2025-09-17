@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="../styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="icon" href="../icon.png" type="image/x-icon">
-    <title>Los koguis</title>
-</head>
-<body>
-    <h1>Rituales</h1>
-    <p>Contenido de rituales</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="icon" href="../icon.png" type="image/x-icon">
+        <title>Los koguis</title>
+        <style>
+                .video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16/9;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+        </style>
+    </head>
+    <body class="fondo-rituales">
+        <div class=" position-absolute top-0 m-3 ">
+            <button class="btn btn-light" onclick="history.go(-1)"><i
+                    class="bi bi-arrow-left"></i> Volver</button>
+        </div>
+        <header class="d-flex justify-content-center my-4">
+            <img src="../img/logo-ritua.png" width="30%" alt="Koguis">
+        </header>
+
+        <main
+            class="container d-flex flex-wrap  justify-content-center pb-2 align-items-center gap-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-6">
+
+                    <div class="ratio ratio-16x9 ">
+                        <iframe
+                            width="500" height="315"
+                            src="https://www.youtube.com/embed/qlcOs8rwttc?si=MOoy1DHh3DHRdWyN"
+                            title="Pagamento de la deuda con la naturaleza - Kogui"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 mt-4 col-8">
+                    <p class="text-white  pb-3 "
+                        style="text-align: justify;"
+                        style="max-width: 600px;">
+                        El pagamento es un acto de reciprocidad, una ofrenda que
+                        se hace a la tierra para agradecer por todo lo que nos
+                        brinda y para devolverle algo a cambio. En esencia, es
+                        una forma de mantener el equilibrio entre el ser humano
+                        y la naturaleza, un principio fundamental en la
+                        cosmovisión indígena.
+                        Para los Koguis, el mundo está regido por la Ley de
+                        Origen, un conjunto de principios espirituales y
+                        naturales que dictan cómo debe ser la vida en la Tierra.
+                        Según esta ley, todo lo que tomamos de la naturaleza
+                        debe ser devuelto de alguna manera. El Pagamento es, por
+                        tanto, un acto de justicia cósmica, una forma de
+                        asegurar que el equilibrio no se rompa.
+                    </p>
+
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
