@@ -61,7 +61,7 @@
   background-size: cover;
   width: 250px;
   height: 250px;
-
+  animation: subir-bajar 2s ease-in-out infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +75,22 @@
   font-weight: bold;
   padding: 0.5rem;
 }
+.nube6 {
+  animation-delay: 1s;
+}
+.nube3 {
+  animation-delay: 1s;
+}
+.nube2 {
+  animation-delay: 1s;
+}
 
+
+
+@keyframes subir-bajar {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(10px); }
+}
 @media (max-width: 768px) {
   .nube {
     width: 180px;
