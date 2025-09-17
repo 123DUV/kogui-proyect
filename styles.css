@@ -1,5 +1,8 @@
 
-
+p{
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+}
 .fondo {
   background: 
     linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  /* capa oscura semitransparente */
@@ -50,12 +53,10 @@
   background-position: center;
   min-height: 100vh; /* 👈 clave */
 }
-.parrafos{
+/* .parrafos{
     color: white;
     font-size: 1.2rem;
-    text-align: justify;
-    margin: 0 15%;
-}
+} */
 .nube {
   background-image: url("./img/burbuja.png");
   background-size: cover;
@@ -73,6 +74,7 @@
   color: black;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.3rem;
   padding: 0.5rem;
 }
 .nube6 {

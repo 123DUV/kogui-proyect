@@ -87,6 +87,22 @@
   height: 100%;
   object-fit: cover;
 }
+.parrafo-container {
+  max-width: 600px;      /* ancho máximo */
+  position: relative;
+}
+
+.parrafos {
+  max-height: 480px;     /* ajusta según la altura de tu imagen */
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.parrafos.expandido {
+  max-height: 250vh;    /* algo bien grande para mostrar todo */
+}
+
+
   </style>
   </head>
   <body class="fondo-arte">
@@ -103,7 +119,7 @@
       class="container d-flex flex-wrap justify-content-center align-items-center pb-3">
       <div class="d-flex flex-column flex-xl-row justify-content-center">
 
-        <div class="carrusel col-8 ">
+        <div class="carrusel col-8">
           <!-- Radios -->
           <input type="radio" name="radio" id="r1" checked>
           <input type="radio" name="radio" id="r2">
@@ -138,7 +154,7 @@
           <button class="nav-btn next">&#10095;</button>
         </div>
         <div class="d-flex   justify-content-center">
-          <p class="text-white px-3 pb-3"
+          <p class="parrafos text-white px-3 pb-3"
             style="text-align: justify;"
             style="max-width: 600px;">
             La mochila en general tiene un alto valor simbólico y
@@ -182,9 +198,11 @@
             estables que tienen los indígenas Kogui con las personas no
             indígenas, están dadas por el café y los derivados de la
             caña de azúcar. </p>
-
+         
         </div>
+        
       </div>
+       <button class="btn btn-light btn-ver-mas mb-3">Ver más</button>
       <div class="ratio ratio-16x9">
         <iframe
           width="500" height="315"
@@ -217,6 +235,18 @@
 
   prev.addEventListener('click', () => show(index - 1));
   next.addEventListener('click', () => show(index + 1));
+
+
+   document.addEventListener("DOMContentLoaded", function () {
+    const parrafo = document.querySelector(".parrafos");
+    const btn = document.querySelector(".btn-ver-mas");
+
+    btn.addEventListener("click", function () {
+      parrafo.classList.toggle("expandido");
+      btn.textContent = parrafo.classList.contains("expandido") ? "Ver menos" : "Ver más";
+    });
+  });
+
 </script>
   </body>
 </html>
